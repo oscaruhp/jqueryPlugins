@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Documentación Rondell</title>
+</head>
+<body>
+   <div id="container">
+    <div><img alt="before" src="imagenes/before.png"  /></div>
+    <div><img alt="after" src="imagenes/after.png" /></div>
+   </div>
+    
+    <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.13.custom.min.js"></script>
+    <script type="text/javascript" src="js/jquery.beforeafter-1.4.js"></script>
+    <script type="text/javascript">
+        
+        $(document).ready(function() {
+             $('#container').beforeAfter({
+                 beforeLinkText:"Antes",
+                 afterLinkText:"Despu&eacute;s",
+                 animateIntro : true,
+                  introDuration : 500,
+                   showFullLinks : true,
+                 dividerColor: '#FF0000'
+             });      
+        });
+  
+    </script>
+</body>
+</html>
