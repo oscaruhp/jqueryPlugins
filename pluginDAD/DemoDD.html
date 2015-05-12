@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt">
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="jquery.dad.css">
+    <script src="jquery.min.js"></script>
+    <script src="jquery.dad.js"></script>
+    <script src="jquery.nicescroll.min.js"></script>
+</head>
+<body>
+<div id="daddy" class="dad"></div>
+    <br/>
+<div class="dropzone"></div>
+    <script>
+         $(function(){
+
+             $.get("datos.php", function(resultado) {
+                   
+                 $.each(resultado, function(i, item) {
+                 $('#daddy').prepend('<div><div id="'+resultado[i].id+'" >'+resultado[i].titulo+'</div></div>');
+              });
+                 CrearDrops();
+            });
+            
+            function CrearDrops(){
+                datos=$('.dad').dad();
+                datos.addDropzone('.dropzone',function(e){
+               
+                    $.ajax({
+                        url: "datos.php",
+                        dataType: 'json',
+                        type: 'POST',
+                        data: {id:e[0].children[0].id,accion:2},
+                        success: function(data) { }.bind(this)});
+                        e.remove();
+                   
+                  
+              });
+            }
+             
+         });
+        
+       
+    </script>
+</body>
+</html>

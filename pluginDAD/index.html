@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head lang="es">
+    
+        <link rel="stylesheet" href="demo.css">
+        <script src="jquery.min.js"></script>
+        
+        <link rel="stylesheet" href="jquery.dad.css">
+        <script src="jquery.dad.js"></script>
+        
+        <title>Demostraci&oacute;n del plugin</title>
+        
+    </head>
+    <body>
+        <div id="daddy" class="dad">
+            <div>
+                <div id="1-Elemento">1</div>
+            </div>
+            <div>
+                <div id="54-Elemento">2</div>
+            </div>
+            <div>
+                <div id="23-Elemento" >3</div>
+            </div>
+            <div>
+                <div id="45-Elemento">4</div>
+            </div>
+        </div>
+        
+        <div class="dropzone"></div>
+        
+        <script>
+            $(function(){
+            datos= $('.dad').dad();
+                datos.addDropzone('.dropzone',function(e){
+                    alert(e[0].children[0].id);
+                    e.remove();
+                
+                });
+            });
+        
+        </script>
+
+    </body>
+</html>
