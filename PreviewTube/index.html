@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>PreViewTube.js</title>
+	
+		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="previewtube.js"></script>
+	</head>
+	<body>
+        <img src="https://i.ytimg.com/vi/JwcxBMydYSo/1.jpg" alt="" class="previewTube" title="" width="150"/>
+        
+        <img src="https://i.ytimg.com/vi/JwcxBMydYSo/1.jpg" alt="" class="previewTubeon" title="" width="150"/>
+        
+        
+     <script>
+        $('.previewTube').PreViewTube({
+            'interval':500,
+            'mode':'constant'
+        });
+         $('.previewTubeon').PreViewTube({
+            'interval':500
+            
+        });
+         
+        </script>
+	</body>
+</html>
