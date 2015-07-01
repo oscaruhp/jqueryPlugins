@@ -1,13 +1,13 @@
 <?php 
 $carpetaAdjunta="imagenes_/";
-// Contar envían por el plugin
-$Imagenes = count($_FILES['imagenes']['name']);
-
+// Contar envÃ­an por el plugin
+$Imagenes =count(isset($_FILES['imagenes']['name'])?$_FILES['imagenes']['name']:0);
+$infoImagenesSubidas = array();
 for($i = 0; $i < $Imagenes; $i++) {
 
 	// El nombre y nombre temporal del archivo que vamos para adjuntar
-	$nombreArchivo=$_FILES['imagenes']['name'][$i];
-	$nombreTemporal=$_FILES['imagenes']['tmp_name'][$i];
+	$nombreArchivo=isset($_FILES['imagenes']['name'][$i])?$_FILES['imagenes']['name'][$i]:null;
+	$nombreTemporal=isset($_FILES['imagenes']['tmp_name'][$i])?$_FILES['imagenes']['tmp_name'][$i]:null;
 	
 	$rutaArchivo=$carpetaAdjunta.$nombreArchivo;
 	
