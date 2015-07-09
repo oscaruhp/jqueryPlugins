@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <title>Blockrain</title>
+    
+    <link rel="stylesheet" href="blockrain.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="blockrain.jquery.min.js"></script>
+    
+</head>
+<body>
+      <div class="juego" style="width:250px; height:500px;"></div>  
+    <input type="hidden" value="Candy" onclick="$game.blockrain('theme', 'candy');">
+    <input type="hidden" value="Pausar" onclick="$game.blockrain('pause');">
+    <input type="hidden" value="Continuar" onclick="$game.blockrain('resume');">
+    
+    <script>
+    $game=$('.juego').blockrain({
+    playButtonText: 'Jugar',
+    playText: 'Vamos a jugar Tetris',
+    theme:'candy',
+    onGameOver: function(score){
+        alert("Tienes el puntaje de :"+score);
+    }
+    });
+    </script>
+</body>
+</html>
