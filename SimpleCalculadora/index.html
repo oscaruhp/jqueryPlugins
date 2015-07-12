@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   
+   <link rel="stylesheet" href="bootstrap.min.css">
+   <script src="jquery-2.1.4.min.js"></script>
+ 
+   <link rel="stylesheet" href="SimpleCalculadorajQuery.css">
+   <script src="SimpleCalculadorajQuery.js"></script>
+       
+</head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class=" col-md-4"> <div id="Calculadora1"></div></div>
+        <div class="col-md-6" > <div id="Calculadora2"></div> </div>
+        <div class="col-md-2" ></div>
+      </div>
+    </div>
+    
+    <script>
+    $('#Calculadora1').Calculadora();
+    $('#Calculadora2').Calculadora({ 
+        EtiquetaBorrar:'Limpiar',
+        ClaseBtns1:'warning',
+        ClaseBtns2:'success',
+        ClaseBtns3:'primary',
+        TituloHTML:"<h2><a href='http://develoteca.com'>Develoteca.com</a></h2>"        
+    });
+    </script>
+    
+  </body>
+</html>
