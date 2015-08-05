@@ -1,0 +1,21 @@
+.Cover3D-container {position: relative;width: 243px;height: 445px;margin: 0 auto;overflow: visible;perspective: 690px;perspective-origin: 50% 50%;-webkit-filter: drop-shadow(10px 10px 7px rgba(0,0,0,.3));}
+.Cover3D { position: absolute;width: 100%;height: 100%;transform-style: preserve-3d;transform: translateZ(-14px);transition: all 2s ease-in-out;transform: rotateY( 40deg ) rotateX( 0deg );
+}.Cover3D:hover{position: absolute;width: 100%;height: 100%;transform-style: preserve-3d;
+  transform: translateZ(-14px);transform: rotateY( 180deg ) rotateX( 0deg );}
+.Cover3D div.front,.Cover3D div.back ,.Cover3D div.left{border-top: solid 5px #333;border-bottom: solid 5px #333;}
+.Cover3D div.front{border-right: solid 5px #333;}
+.Cover3D div.back {border-left: solid 5px #333;}
+.Cover3D div.front {width: 243px; height: 345px;background-position: 243px 0px;
+  z-index: 10;transform: rotateY( 0deg ) translateZ( 14px );
+}.Cover3D div.back {width: 243px;height: 345px;background-position: 0px 0px;transform: rotateY( 180deg ) translateZ( 14px );}
+.Cover3D div.left { width: 28px; height: 345px; background-position: 265px 0px;
+  transform: rotateY( -90deg ) translateZ( 14px );}
+.Cover3D div.right  { width: 28px; height: 345px;transform: rotateY( 90deg ) translateZ( 230px ); background-image: none;background-color: rgba(0,0,0,0.7);}
+.Cover3D div.top { width: 243px;height: 28px;transform: rotateX( 90deg ) translateZ( 14px );
+  background-image: none;background-color: rgba(0,0,0,0.7);}
+.Cover3D-container .Cover3D div.bottom {width: 243px;height: 28px;
+  transform: rotateX( -90deg ) translateZ( 331px );background-image: none;background-color: rgba(0,0,0,0.7);}
+ .cover {display: table;width: 100%;height: 100%;}
+.cover-cell {display: table-cell;vertical-align: middle;}
+.cover-cell * {Cover3D-sizing: border-Cover3D;}.Cover3D div {position: absolute;background-color: rgba(0,0,0,0.7);  background-size: 500px 345px;backface-visibility: visible;} 
+   
