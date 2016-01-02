@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <link href="css/ProgressBarWars.css" rel="stylesheet"/>
+      <script src="js/ProgressBarWars.js"></script>
+
+      <style>  body{text-align: center;}</style>
+      
+</head>
+<body >
+     <div id="example1"></div>  
+    <input type="button" value="Vader 70%" onclick="vd.mover(60);">
+    <script>
+        var vd=$("#example1").ProgressBarWars({
+            porcentaje:80,
+            estilo:"vader",
+            tiempo:5980,
+            alto:"50px"
+        });
+        
+    </script> 
+</body>
+	
+</html>

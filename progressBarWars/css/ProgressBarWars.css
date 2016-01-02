@@ -1,0 +1,6 @@
+.barControl {margin: 0 auto;}
+.barContro_space { margin: 10px 0;	background:grey;border-radius: 5px;}
+.vader{border-radius: 2px;display: block;width: 0%;box-shadow:0px 0px 10px 1px #FD4275, 0 0 1px #FD4275, 0 0 1px #FD4275, 0 0 1px #FD4275, 0 0 1px #FD4275, 0 0 1px #FD4275, 0 0 1px #FD4275;background-color: #fff;}
+.yoda{border-radius: 2px;display: block; width: 0%; box-shadow:0px 0px 10px 1px #68B37A, 0 0 1px #68B37A, 0 0 1px #68B37A, 0 0 1px #68B37A, 0 0 1px #68B37A, 0 0 1px #68B37A, 0 0 1px #68B37A;background-color: #FFFFFF;}
+.obi{border-radius: 2px;display: block; width: 0%;box-shadow:0px 0px 10px 1px #3B8CF8, 0 0 1px #3B8CF8, 0 0 1px #3B8CF8, 0 0 1px #3B8CF8, 0 0 1px #3B8CF8, 0 0 1px #3B8CF8, 0 0 1px #3B8CF8;background-color: #FFF;}
+.windu{ border-radius: 2px;display: block; width: 0%; box-shadow:0px 0px 10px 1px #AC85B4, 0 0 1px #AC85B4, 0 0 1px #AC85B4, 0 0 1px #AC85B4, 0 0 1px #AC85B4, 0 0 1px #AC85B4, 0 0 1px #AC85B4;background-color: #fff;}
