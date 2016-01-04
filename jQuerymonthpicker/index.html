@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery monthpicker</title>
+  <link rel="stylesheet" type="text/css" href="jquery.monthpicker.css">
+
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    .content {
+      padding: 5em;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <a href="#monthpicker" id="monthpicker"></a>
+  </div>
+
+  <script src="jquery-1.11.1.js"></script>
+  <script src="jquery.monthpicker.js"></script>
+
+  <script>
+    $(function() {
+      $('#monthpicker').monthpicker({
+        years: [2015, 2014, 2013, 2012, 2011],
+          months:['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+        topOffset: 6,
+        onMonthSelect: function(m, y) {
+          console.log('Month: ' + m + ', year: ' + y);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
+
