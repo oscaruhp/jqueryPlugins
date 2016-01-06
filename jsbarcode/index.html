@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+   <script src="JsBarcode.all.min.js"></script>
+</head>
+<body>
+    <canvas id="1"></canvas>
+    <canvas id="2"></canvas>
+    <canvas id="3"></canvas>
+    
+    
+    <script>
+    	$(document).ready(function(){
+	           $("#1").JsBarcode("Develoteca 1",{displayValue:true,fontSize:20});
+             $("#2").JsBarcode("Develoteca 2",{displayValue:true,fontSize:20});
+             $("#3").JsBarcode("Develoteca 3",{displayValue:true,fontSize:20});
+		});    
+    </script>
+</body>
+</html>
