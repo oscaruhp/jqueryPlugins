@@ -1,0 +1,5 @@
+c:\users\pc\documents\visual studio 2012\Projects\UploadAjaxASP\UploadAjaxASP\bin\UploadAjaxASP.dll
+c:\users\pc\documents\visual studio 2012\Projects\UploadAjaxASP\UploadAjaxASP\bin\UploadAjaxASP.pdb
+c:\users\pc\documents\visual studio 2012\Projects\UploadAjaxASP\UploadAjaxASP\obj\Debug\UploadAjaxASP.csprojResolveAssemblyReference.cache
+c:\users\pc\documents\visual studio 2012\Projects\UploadAjaxASP\UploadAjaxASP\obj\Debug\UploadAjaxASP.dll
+c:\users\pc\documents\visual studio 2012\Projects\UploadAjaxASP\UploadAjaxASP\obj\Debug\UploadAjaxASP.pdb
